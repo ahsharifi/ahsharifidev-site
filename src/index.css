@@ -1,0 +1,499 @@
+:root {
+  /* ========================================
+       PRIMARY — BRONZE
+    ======================================== */
+
+  --primary-50: #fbf5ef;
+  --primary-100: #f3e5d4;
+  --primary-200: #e5c8a5;
+  --primary-300: #d4a978;
+  --primary-400: #c59261;
+  --primary-500: #b47a4b;
+  --primary-600: #965f37;
+  --primary-700: #74472d;
+
+  /* ========================================
+       SECONDARY — WARM GOLD
+    ======================================== */
+
+  --secondary-50: #fcf8ed;
+  --secondary-100: #f5eac9;
+  --secondary-200: #ebd79b;
+  --secondary-300: #dfc06b;
+  --secondary-400: #d2a94d;
+  --secondary-500: #be9137;
+  --secondary-600: #99712a;
+  --secondary-700: #735321;
+
+  /* ========================================
+       BACKGROUNDS
+    ======================================== */
+
+  --background: #080a0d;
+  --background-secondary: #0d1014;
+
+  --surface: #111419;
+  --surface-hover: #171a20;
+
+  --card: #14171c;
+  --card-hover: #1a1e24;
+
+  --elevated: #1d2127;
+
+  --input: #101318;
+  --input-hover: #151920;
+  --input-focus: #181c22;
+
+  /* ========================================
+       BORDERS
+    ======================================== */
+
+  --border: #292d33;
+  --border-light: #373b41;
+  --border-dark: #1d2025;
+
+  --border-primary: rgba(180, 122, 75, 0.35);
+  --border-secondary: rgba(210, 169, 77, 0.35);
+
+  /* ========================================
+       TEXT
+    ======================================== */
+
+  --text-primary: #f4f1ec;
+  --text-secondary: #b8b2a9;
+  --text-muted: #7d7a74;
+  --text-disabled: #52545a;
+
+  --text-on-primary: #0a0b0d;
+  --text-on-secondary: #0a0b0d;
+
+  /* ========================================
+       STATUS
+    ======================================== */
+
+  --success: #3faf7a;
+  --success-bg: rgba(63, 175, 122, 0.1);
+  --success-border: rgba(63, 175, 122, 0.25);
+
+  --warning: #d6a74b;
+  --warning-bg: rgba(214, 167, 75, 0.1);
+  --warning-border: rgba(214, 167, 75, 0.25);
+
+  --error: #c75c5c;
+  --error-bg: rgba(199, 92, 92, 0.1);
+  --error-border: rgba(199, 92, 92, 0.25);
+
+  --info: #668fa8;
+  --info-bg: rgba(102, 143, 168, 0.1);
+  --info-border: rgba(102, 143, 168, 0.25);
+
+  /* ========================================
+       GRADIENTS
+    ======================================== */
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--primary-400),
+    var(--primary-600)
+  );
+
+  --gradient-gold: linear-gradient(
+    135deg,
+    var(--secondary-300),
+    var(--secondary-600)
+  );
+
+  --gradient-dark: linear-gradient(135deg, #080a0d, #14171c);
+
+  --gradient-hero:
+    radial-gradient(
+      circle at 75% 40%,
+      rgba(180, 122, 75, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #080a0d 0%, #0d1014 50%, #111419 100%);
+
+  /* ========================================
+       GLOW
+    ======================================== */
+
+  --glow-primary: 0 0 40px rgba(180, 122, 75, 0.15);
+
+  --glow-secondary: 0 0 40px rgba(210, 169, 77, 0.15);
+
+  --glow-strong: 0 0 60px rgba(180, 122, 75, 0.25);
+
+  /* ========================================
+       SHADOWS
+    ======================================== */
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.45);
+
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  /* ========================================
+       RADIUS
+    ======================================== */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ========================================
+       TRANSITION
+    ======================================== */
+
+  --transition-fast: 150ms ease;
+  --transition: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* ============================================
+   GLOBAL
+============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+/* ============================================
+   SECTIONS
+============================================ */
+
+.section {
+  background: var(--background);
+}
+
+.section-alt {
+  background: var(--background-secondary);
+}
+
+/* ============================================
+   CARDS
+============================================ */
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-lg);
+
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.card:hover {
+  background: var(--card-hover);
+  border-color: var(--border-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card), var(--glow-primary);
+}
+
+/* ============================================
+   PREMIUM CARD
+============================================ */
+
+.card-premium {
+  background: linear-gradient(
+    145deg,
+    rgba(180, 122, 75, 0.08),
+    rgba(20, 23, 28, 0.95)
+  );
+
+  border: 1px solid var(--border-primary);
+}
+
+/* ============================================
+   BUTTONS
+============================================ */
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  border: none;
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    filter var(--transition);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glow-primary);
+  filter: brightness(1.08);
+}
+
+.btn-secondary {
+  background: var(--gradient-gold);
+  color: var(--text-on-secondary);
+  border: none;
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glow-secondary);
+}
+
+/* ============================================
+   OUTLINE BUTTON
+============================================ */
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-300);
+  border: 1px solid var(--border-primary);
+
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+}
+
+.btn-outline:hover {
+  background: rgba(180, 122, 75, 0.08);
+  border-color: var(--primary-500);
+  color: var(--primary-200);
+}
+
+/* ============================================
+   INPUT
+============================================ */
+
+.input {
+  background: var(--input);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+}
+
+.input:hover {
+  background: var(--input-hover);
+}
+
+.input:focus {
+  outline: none;
+  background: var(--input-focus);
+  border-color: var(--primary-500);
+
+  box-shadow: 0 0 0 3px rgba(180, 122, 75, 0.1);
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ============================================
+   BADGES
+============================================ */
+
+.badge-primary {
+  background: rgba(180, 122, 75, 0.1);
+  color: var(--primary-300);
+  border: 1px solid var(--border-primary);
+}
+
+.badge-secondary {
+    background: rgba(210, 169, 77, 0.10);
+    color: var(--secondary-300);
+    border: 1px solid var(--border-secondary);
+}
+
+
+/* ============================================
+   DIVIDER
+============================================ */
+
+.divider {
+    height: 1px;
+    background: var(--border);
+}
+
+.divider-gradient {
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--primary-600),
+            transparent
+        );
+}
+
+
+/* ============================================
+   NAVBAR
+============================================ */
+
+.navbar {
+    background: rgba(8, 10, 13, 0.80);
+    border-bottom: 1px solid var(--border-dark);
+
+    backdrop-filter: blur(16px);
+}
+
+.navbar-link {
+    color: var(--text-secondary);
+    transition: color var(--transition);
+}
+
+.navbar-link:hover {
+    color: var(--primary-300);
+}
+
+.navbar-link.active {
+    color: var(--primary-400);
+}
+
+
+/* ============================================
+   HERO
+============================================ */
+
+.hero {
+    background: var(--gradient-hero);
+}
+
+
+/* ============================================
+   ICON BOX
+============================================ */
+
+.icon-box {
+    background: rgba(180, 122, 75, 0.08);
+    color: var(--primary-400);
+    border: 1px solid var(--border-primary);
+
+    border-radius: var(--radius-md);
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        box-shadow var(--transition);
+}
+
+.icon-box:hover {
+    background: rgba(180, 122, 75, 0.14);
+    color: var(--primary-300);
+    box-shadow: var(--glow-primary);
+}
+
+
+/* ============================================
+   SKILL / TECH TAG
+============================================ */
+
+.tech-tag {
+    background: var(--surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+
+    transition:
+        border-color var(--transition),
+        color var(--transition),
+        background var(--transition);
+}
+
+.tech-tag:hover {
+    background: rgba(180, 122, 75, 0.07);
+    color: var(--primary-300);
+    border-color: var(--border-primary);
+}
+
+
+/* ============================================
+   PROGRESS BAR
+============================================ */
+
+.progress {
+    background: var(--surface);
+}
+
+.progress-bar {
+    background: var(--gradient-primary);
+}
+
+
+/* ============================================
+   SELECTION
+============================================ */
+
+::selection {
+    background: var(--primary-600);
+    color: var(--text-primary);
+}
+
+
+/* ============================================
+   SCROLLBAR
+============================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-light);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-600);
+}
+
+
+/* ============================================
+   STATUS
+============================================ */
+
+.status-success {
+    color: var(--success);
+    background: var(--success-bg);
+    border: 1px solid var(--success-border);
+}
+
+.status-warning {
+    color: var(--warning);
+    background: var(--warning-bg);
+    border: 1px solid var(--warning-border);
+}
+
+.status-error {
+    color: var(--error);
+    background: var(--error-bg);
+    border: 1px solid var(--error-border);
+}
+
+.status-info {
+    color: var(--info);
+    background: var(--info-bg);
+    border: 1px solid var(--info-border);
+}
