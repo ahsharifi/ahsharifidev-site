@@ -1,45 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fdf8ef;
+  --color-gold-100: #f5e6c8;
+  --color-gold-200: #e8d5a3;
+  --color-gold-300: #d4b87a;
+  --color-gold-400: #c9a96e;
+  --color-gold-500: #b8943e;
+  --color-gold-600: #8b7340;
+  --color-gold-700: #6b5730;
+  --color-gold-800: #4a3d21;
+  --color-gold-900: #2a2313;
+
+  --color-dark-50: #2a2a2a;
+  --color-dark-100: #222222;
+  --color-dark-200: #1a1a1a;
+  --color-dark-300: #161616;
+  --color-dark-400: #131313;
+  --color-dark-500: #111111;
+  --color-dark-600: #0e0e0e;
+  --color-dark-700: #0c0c0c;
+  --color-dark-800: #0a0a0a;
+  --color-dark-900: #080808;
+
+  --font-vazir: "Vazirmatn", sans-serif;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: #fff;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.5);
+}
+
+/* ============================================
+   Fonts
+============================================ */
+
+@font-face {
+  font-family: stedad-regular;
+  src: url("assets/fonts/Estedad-Regular.woff2");
+}
+
+@font-face {
+  font-family: stedad-black;
+  src: url("assets/fonts/Estedad-Black.woff2");
+}
+
+@font-face {
+  font-family: shekaste;
+  src: url("assets/fonts/DigiNegare-Bold.woff2");
+}
+
+@font-face {
+  font-family: console;
+  src: url("assets/fonts/Lucida\ Console.woff2");
+}
+
 :root {
   /* ========================================
-       PRIMARY — BRONZE
+       PRIMARY — GOLD
     ======================================== */
 
-  --primary-50: #fbf5ef;
-  --primary-100: #f3e5d4;
-  --primary-200: #e5c8a5;
-  --primary-300: #d4a978;
-  --primary-400: #c59261;
-  --primary-500: #b47a4b;
-  --primary-600: #965f37;
-  --primary-700: #74472d;
+  --primary-50: #fdf8ef;
+  --primary-100: #f5e6c8;
+  --primary-200: #e8d5a3;
+  --primary-300: #d4b87a;
+  --primary-400: #c9a96e;
+  --primary-500: #b8943e;
+  --primary-600: #8b7340;
+  --primary-700: #6b5730;
 
   /* ========================================
-       SECONDARY — WARM GOLD
+       SECONDARY — RICH GOLD
     ======================================== */
 
-  --secondary-50: #fcf8ed;
-  --secondary-100: #f5eac9;
-  --secondary-200: #ebd79b;
-  --secondary-300: #dfc06b;
-  --secondary-400: #d2a94d;
-  --secondary-500: #be9137;
-  --secondary-600: #99712a;
-  --secondary-700: #735321;
+  --secondary-50: #fffdf5;
+  --secondary-100: #f8edc7;
+  --secondary-200: #f0d060;
+  --secondary-300: #e4c34f;
+  --secondary-400: #d4af37;
+  --secondary-500: #c9a84c;
+  --secondary-600: #a8862f;
+  --secondary-700: #7a6225;
 
   /* ========================================
        BACKGROUNDS
+       دست‌نخورده
     ======================================== */
 
   --background: #080a0d;
   --background-secondary: #0d1014;
-
   --surface: #111419;
   --surface-hover: #171a20;
-
   --card: #14171c;
   --card-hover: #1a1e24;
-
   --elevated: #1d2127;
-
   --input: #101318;
   --input-hover: #151920;
   --input-focus: #181c22;
@@ -52,8 +119,8 @@
   --border-light: #373b41;
   --border-dark: #1d2025;
 
-  --border-primary: rgba(180, 122, 75, 0.35);
-  --border-secondary: rgba(210, 169, 77, 0.35);
+  --border-primary: rgba(212, 175, 55, 0.35);
+  --border-secondary: rgba(240, 208, 96, 0.35);
 
   /* ========================================
        TEXT
@@ -91,24 +158,16 @@
        GRADIENTS
     ======================================== */
 
-  --gradient-primary: linear-gradient(
-    135deg,
-    var(--primary-400),
-    var(--primary-600)
-  );
+  --gradient-primary: linear-gradient(135deg, #d4af37, #f0d060, #c9a84c);
 
-  --gradient-gold: linear-gradient(
-    135deg,
-    var(--secondary-300),
-    var(--secondary-600)
-  );
+  --gradient-gold: linear-gradient(135deg, #f0d060, #d4af37, #a8862f);
 
   --gradient-dark: linear-gradient(135deg, #080a0d, #14171c);
 
   --gradient-hero:
     radial-gradient(
       circle at 75% 40%,
-      rgba(180, 122, 75, 0.12),
+      rgba(212, 175, 55, 0.07),
       transparent 35%
     ),
     linear-gradient(135deg, #080a0d 0%, #0d1014 50%, #111419 100%);
@@ -117,22 +176,17 @@
        GLOW
     ======================================== */
 
-  --glow-primary: 0 0 40px rgba(180, 122, 75, 0.15);
-
-  --glow-secondary: 0 0 40px rgba(210, 169, 77, 0.15);
-
-  --glow-strong: 0 0 60px rgba(180, 122, 75, 0.25);
+  --glow-primary: 0 0 40px rgba(212, 175, 55, 0.15);
+  --glow-secondary: 0 0 40px rgba(240, 208, 96, 0.15);
+  --glow-strong: 0 0 60px rgba(212, 175, 55, 0.25);
 
   /* ========================================
        SHADOWS
     ======================================== */
 
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
-
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
-
   --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.45);
-
   --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.3);
 
   /* ========================================
@@ -144,6 +198,15 @@
   --radius-lg: 16px;
   --radius-xl: 24px;
   --radius-full: 9999px;
+
+  /* ========================================
+       FONTS
+    ======================================== */
+
+  --regular: stedad-regular;
+  --black: stedad-black;
+  --shekaste: shekaste;
+  --console: console;
 
   /* ========================================
        TRANSITION
@@ -165,6 +228,20 @@ html {
 body {
   background: var(--background);
   color: var(--text-primary);
+  font-family: var(--regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--black);
+}
+
+p {
+  color: var(--text-secondary);
 }
 
 /* ============================================
@@ -317,183 +394,339 @@ body {
 }
 
 .badge-secondary {
-    background: rgba(210, 169, 77, 0.10);
-    color: var(--secondary-300);
-    border: 1px solid var(--border-secondary);
+  background: rgba(210, 169, 77, 0.1);
+  color: var(--secondary-300);
+  border: 1px solid var(--border-secondary);
 }
-
 
 /* ============================================
    DIVIDER
 ============================================ */
 
 .divider {
-    height: 1px;
-    background: var(--border);
+  height: 1px;
+  background: var(--border);
 }
 
 .divider-gradient {
-    height: 1px;
+  height: 1px;
 
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            var(--primary-600),
-            transparent
-        );
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-600),
+    transparent
+  );
 }
-
 
 /* ============================================
    NAVBAR
 ============================================ */
 
 .navbar {
-    background: rgba(8, 10, 13, 0.80);
-    border-bottom: 1px solid var(--border-dark);
+  background: rgba(8, 10, 13, 0.8);
+  border-bottom: 1px solid var(--border-dark);
 
-    backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 
 .navbar-link {
-    color: var(--text-secondary);
-    transition: color var(--transition);
+  color: var(--text-secondary);
+  transition: color var(--transition);
 }
 
 .navbar-link:hover {
-    color: var(--primary-300);
+  color: var(--primary-300);
 }
 
 .navbar-link.active {
-    color: var(--primary-400);
+  color: var(--primary-400);
 }
-
 
 /* ============================================
    HERO
 ============================================ */
 
 .hero {
-    background: var(--gradient-hero);
+  background: var(--gradient-hero);
 }
-
 
 /* ============================================
    ICON BOX
 ============================================ */
 
 .icon-box {
-    background: rgba(180, 122, 75, 0.08);
-    color: var(--primary-400);
-    border: 1px solid var(--border-primary);
+  background: rgba(180, 122, 75, 0.08);
+  color: var(--primary-400);
+  border: 1px solid var(--border-primary);
 
-    border-radius: var(--radius-md);
+  border-radius: var(--radius-md);
 
-    transition:
-        background var(--transition),
-        color var(--transition),
-        box-shadow var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition),
+    box-shadow var(--transition);
 }
 
 .icon-box:hover {
-    background: rgba(180, 122, 75, 0.14);
-    color: var(--primary-300);
-    box-shadow: var(--glow-primary);
+  background: rgba(180, 122, 75, 0.14);
+  color: var(--primary-300);
+  box-shadow: var(--glow-primary);
 }
-
 
 /* ============================================
    SKILL / TECH TAG
 ============================================ */
 
 .tech-tag {
-    background: var(--surface);
-    color: var(--text-secondary);
-    border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
 
-    transition:
-        border-color var(--transition),
-        color var(--transition),
-        background var(--transition);
+  transition:
+    border-color var(--transition),
+    color var(--transition),
+    background var(--transition);
 }
 
 .tech-tag:hover {
-    background: rgba(180, 122, 75, 0.07);
-    color: var(--primary-300);
-    border-color: var(--border-primary);
+  background: rgba(180, 122, 75, 0.07);
+  color: var(--primary-300);
+  border-color: var(--border-primary);
 }
-
 
 /* ============================================
    PROGRESS BAR
 ============================================ */
 
 .progress {
-    background: var(--surface);
+  background: var(--surface);
 }
 
 .progress-bar {
-    background: var(--gradient-primary);
+  background: var(--gradient-primary);
 }
-
 
 /* ============================================
    SELECTION
 ============================================ */
 
 ::selection {
-    background: var(--primary-600);
-    color: var(--text-primary);
+  background: var(--primary-600);
+  color: var(--text-primary);
 }
-
 
 /* ============================================
    SCROLLBAR
 ============================================ */
 
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background);
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--border-light);
-    border-radius: var(--radius-full);
+  background: var(--border-light);
+  border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-600);
+  background: var(--primary-600);
 }
-
 
 /* ============================================
    STATUS
 ============================================ */
 
 .status-success {
-    color: var(--success);
-    background: var(--success-bg);
-    border: 1px solid var(--success-border);
+  color: var(--success);
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
 }
 
 .status-warning {
-    color: var(--warning);
-    background: var(--warning-bg);
-    border: 1px solid var(--warning-border);
+  color: var(--warning);
+  background: var(--warning-bg);
+  border: 1px solid var(--warning-border);
 }
 
 .status-error {
-    color: var(--error);
-    background: var(--error-bg);
-    border: 1px solid var(--error-border);
+  color: var(--error);
+  background: var(--error-bg);
+  border: 1px solid var(--error-border);
 }
 
 .status-info {
-    color: var(--info);
-    background: var(--info-bg);
-    border: 1px solid var(--info-border);
+  color: var(--info);
+  background: var(--info-bg);
+  border: 1px solid var(--info-border);
+}
+
+.gold-glow {
+  box-shadow:
+    0 0 40px rgba(212, 175, 55, 0.08),
+    0 0 80px rgba(212, 175, 55, 0.04);
+}
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.12);
+}
+.gold-border-hover:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+}
+.gold-text {
+  background: linear-gradient(135deg, #d4af37, #f0d060, #c9a84c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gold-line {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 175, 55, 0.4),
+    transparent
+  );
+  height: 1px;
+}
+.gold-line-v {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(212, 175, 55, 0.3),
+    transparent
+  );
+  width: 1px;
+}
+
+.card-dark {
+  background: linear-gradient(
+    145deg,
+    rgba(20, 20, 20, 0.8),
+    rgba(12, 12, 12, 0.9)
+  );
+  border: 1px solid rgba(212, 175, 55, 0.08);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-dark:hover {
+  border-color: rgba(212, 175, 55, 0.25);
+  box-shadow:
+    0 8px 40px rgba(212, 175, 55, 0.06),
+    0 0 0 1px rgba(212, 175, 55, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero-bg {
+  background:
+    radial-gradient(
+      ellipse at 30% 20%,
+      rgba(212, 175, 55, 0.04) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 70% 80%,
+      rgba(184, 148, 46, 0.03) 0%,
+      transparent 50%
+    ),
+    #070707;
+}
+
+.noise-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+.animate-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animate-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animate-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.animate-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animate-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.skill-bar-fill {
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0;
+}
+.skill-bar-fill.filled {
+  width: var(--w);
+}
+
+.stat-number {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.float-anim {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-gold {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 175, 55, 0.08) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
 }

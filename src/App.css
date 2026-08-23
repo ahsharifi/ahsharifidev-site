@@ -1,0 +1,50 @@
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 140px 0 40px;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .right h1 {
+  width: fit-content;
+  background: linear-gradient(135deg, #d4af37, #f0d060, #c9a84c);
+  background-clip: text;
+  color: transparent;
+  line-height: 1.5;
+}
+
+.hero .right h3 {
+  font-family: var(--regular);
+  font-weight: 600;
+}
+
+.hero .right p {
+  font-size: 1.125rem;
+  line-height: 2;
+  width: 80%;
+}
+
+.hero .right .socials a svg {
+  opacity: 0.3;
+  transition: all 0.2s ease;
+}
+
+.hero .right .socials a:hover svg {
+  color: var(--color-gold-300);
+  opacity: 1;
+}
+
+.image-box {
+  width: 340px;
+  aspect-ratio: 4/5;
+}
