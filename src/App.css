@@ -27,6 +27,18 @@
   line-height: 1.5;
 }
 
+.hero .right .attributes p {
+  font-size: 1rem;
+  width: fit-content;
+  color: var(--color-yellow-300);
+  cursor: default;
+  transition: all 0.2s ease;
+}
+
+.hero .right .attributes p:hover {
+  box-shadow: 0 0 8px var(--color-gold-700);
+}
+
 .hero .right p {
   font-size: 1.125rem;
   line-height: 2;

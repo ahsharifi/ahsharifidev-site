@@ -18,14 +18,21 @@ function Hero() {
             <h1 className="text-4xl">امیرحسین شریفی</h1>
             <h2 className="text-4xl">هستم</h2>
           </div>
-          <div className="type">
-            <h3 className="text-xl mt-4">طراح و توسعه دهنده فول استک وب</h3>
+          <div className="mb-2">
+            <h3 className="text-lg mt-4">
+              توسعه‌دهنده Full-Stack متخصص در ساخت وب‌اپلیکیشن‌
+            </h3>
+          </div>
+          <div className="attributes w-fit flex flex-row flex-wrap align-center items-center mt-3 gap-3">
+            <p className="bg-gold-500/10 px-6 py-1 rounded-xl">سریع</p>
+            <p className="bg-gold-500/10 px-6 py-1 rounded-xl">مقیاس پذیر</p>
+            <p className="bg-gold-500/10 px-6 py-1 rounded-xl">مدرن</p>
           </div>
           <p className="mb-5 mt-4">
             بیش از ۷ سال تجربه در ساخت محصولات دیجیتال با تمرکز بر عملکرد بالا،
             تجربه کاربری عالی و معماری تمیز. آماده چالش‌های جدید.
           </p>
-          <div className="buttons flex flex-row items-center justify-start gap-3">
+          <div className="buttons flex flex-row items-center justify-start gap-4">
             <button className="btn-primary py-2.5 px-6 rounded-sm text-lg flex items-center gap-2 cursor-pointer">
               <Send size={16} />
               شروع همکاری
@@ -35,7 +42,7 @@ function Hero() {
               دانلود رزومه
             </button>
           </div>
-          <div className="socials mt-8 flex flex-row items-center justify-center gap-3 w-3/5 opacity-80">
+          <div className="socials mt-10 flex flex-row items-center justify-center gap-3 w-3/5 opacity-80">
             {/* github */}
             <a href="">
               <FaGithub size={30} />
