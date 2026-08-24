@@ -12,18 +12,16 @@ function Hero() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-gold-400/[0.02] rounded-full"></div>
       </div>
       <div className="container relative" style={{ zIndex: 10 }}>
-        <div className="right w-1/2 flex flex-col">
-          <div className="flex flex-row items-center gap-2">
-            <h2 className="text-4xl">سلام، من</h2>
+        <div className="right w-4/8 flex flex-col">
+          <div className="title flex flex-row items-center gap-2">
+            <h2 className="text-4xl">سلام</h2>
             <h1 className="text-4xl">امیرحسین شریفی</h1>
             <h2 className="text-4xl">هستم</h2>
           </div>
           <div className="type">
-            <h3 className="text-xl mt-4 text-gold-300">
-              طراح و توسعه دهنده فول استک وب
-            </h3>
+            <h3 className="text-xl mt-4">طراح و توسعه دهنده فول استک وب</h3>
           </div>
-          <p className="mb-6 mt-4">
+          <p className="mb-5 mt-4">
             بیش از ۷ سال تجربه در ساخت محصولات دیجیتال با تمرکز بر عملکرد بالا،
             تجربه کاربری عالی و معماری تمیز. آماده چالش‌های جدید.
           </p>
@@ -37,7 +35,7 @@ function Hero() {
               دانلود رزومه
             </button>
           </div>
-          <div className="socials mt-10 flex flex-row items-center justify-center gap-3 w-1/2 opacity-80">
+          <div className="socials mt-8 flex flex-row items-center justify-center gap-3 w-3/5 opacity-80">
             {/* github */}
             <a href="">
               <FaGithub size={30} />
@@ -52,7 +50,7 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="left w-1/2 flex flex-row items-center justify-center">
+        <div className="left w-4/10 flex flex-row items-center justify-center">
           <div className="image-box relative">
             <div className="absolute w-full h-full rounded-3xl gold-border float-anim -top-3 -left-3"></div>
             <img
@@ -63,7 +61,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+      <div className="scroll absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <span className="text-[10px] text-neutral-600 tracking-widest uppercase">
           اسکرول
         </span>
