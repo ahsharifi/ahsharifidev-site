@@ -164,6 +164,22 @@ header button:hover {
 
 @media only screen and (max-width: 1180px) {
   .container {
+    width: 95%;
+  }
+
+  /* ==================================================
+  About
+===================================================*/
+
+  .about {
+    padding: 80px 0;
+  }
+
+  .about .right .card .card-body {
+    flex-direction: column;
+  }
+
+  .about .right .card .card-body .box {
     width: 100%;
   }
 }
@@ -199,6 +215,30 @@ header button:hover {
   .hero .scroll {
     display: none;
   }
+
+  .about .right .card .card-body {
+    flex-direction: row;
+  }
+
+  .about .right .card .card-body .box {
+    width: 48%;
+  }
+
+  /* ==================================================
+  About
+===================================================*/
+
+  .about .container {
+    flex-direction: column-reverse;
+  }
+
+  .about .right {
+    width: 80%;
+  }
+
+  .about .left {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -211,6 +251,18 @@ header button:hover {
   }
 
   .hero .left {
+    width: 100%;
+  }
+
+  /* ==================================================
+  About
+===================================================*/
+
+  .about .right .card .card-body {
+    flex-direction: column;
+  }
+
+  .about .right .card .card-body .box {
     width: 100%;
   }
 }

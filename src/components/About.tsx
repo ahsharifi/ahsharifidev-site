@@ -67,7 +67,7 @@ function About() {
             دیپلم ندارم؟ درسته. ولی ۶ سال سابقه واقعی دارم که با هیچ مدرکی عوضش
             نمی‌کنم. مدرک یه کاغذه، توانایی یه زبانه.
           </p>
-          <div className="tags flex flex-row gap-3 w-full justify-center">
+          <div className="tags flex flex-row gap-3 w-full justify-center flex-wrap">
             <span className="bg-gold-600/15 px-4 rounded-3xl text-gold-300 h-10 border border-gold-300/30 flex flex-row items-center gap-2">
               <Clock size={16} />6 سال تجربه
             </span>
