@@ -5,11 +5,61 @@
 }
 
 /* ==================================================
+  Header
+===================================================*/
+
+header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 70px;
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+}
+
+header ul li {
+  padding-block: 8px;
+  position: relative;
+}
+
+header ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-gold-300);
+  transition: all 0.2s ease;
+}
+
+header ul li:hover {
+  color: var(--color-gold-300);
+  transition: all 0.2s ease;
+}
+
+header ul li:hover::before {
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+header button {
+  background: linear-gradient(135deg, #f6d365 0%, #d4af37 55%, #a67c00 100%);
+  transition: all 0.2s ease;
+}
+
+header button:hover {
+  box-shadow: 0 0 8px var(--color-gold-700);
+}
+
+/* ==================================================
   Hero
 ===================================================*/
 
 .hero {
-  padding: 160px 0 40px;
+  padding: 180px 0 40px;
 }
 
 .hero .container {
@@ -46,7 +96,7 @@
 }
 
 .hero .right .socials a svg {
-  opacity: 0.3;
+  opacity: 0.5;
   transition: all 0.2s ease;
 }
 
@@ -56,7 +106,7 @@
 }
 
 .hero .image-box {
-  width: 340px;
+  width: 320px;
   aspect-ratio: 4/5;
 }
 
