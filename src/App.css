@@ -110,8 +110,76 @@ header button:hover {
   aspect-ratio: 4/5;
 }
 
+/* ==================================================
+  About
+===================================================*/
+
+.about .right .card-body .box {
+  border-bottom: 1px solid var(--color-gray-800);
+}
+
+.about .right .card-body .box p {
+  font-size: 0.9rem;
+}
+
+.about .right .card-body .box p:first-child {
+  color: var(--color-gray-400);
+}
+
+.about .right .card-body .box p:last-child {
+  color: var(--color-gray-100);
+}
+
+.about .right .card-body .box.status p:last-child {
+  color: var(--color-emerald-500);
+  font-weight: bold;
+  position: relative;
+  padding-right: 15px;
+}
+
+.about .right .card-body .box.status p:last-child::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-emerald-500);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-55%);
+  border-radius: 50%;
+  animation: breath 2s ease infinite;
+}
+
+@keyframes breath {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1180px) {
   .container {
+    width: 95%;
+  }
+
+  /* ==================================================
+  About
+===================================================*/
+
+  .about {
+    padding: 80px 0;
+  }
+
+  .about .right .card .card-body {
+    flex-direction: column;
+  }
+
+  .about .right .card .card-body .box {
     width: 100%;
   }
 }
@@ -147,6 +215,30 @@ header button:hover {
   .hero .scroll {
     display: none;
   }
+
+  .about .right .card .card-body {
+    flex-direction: row;
+  }
+
+  .about .right .card .card-body .box {
+    width: 48%;
+  }
+
+  /* ==================================================
+  About
+===================================================*/
+
+  .about .container {
+    flex-direction: column-reverse;
+  }
+
+  .about .right {
+    width: 80%;
+  }
+
+  .about .left {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -159,6 +251,18 @@ header button:hover {
   }
 
   .hero .left {
+    width: 100%;
+  }
+
+  /* ==================================================
+  About
+===================================================*/
+
+  .about .right .card .card-body {
+    flex-direction: column;
+  }
+
+  .about .right .card .card-body .box {
     width: 100%;
   }
 }

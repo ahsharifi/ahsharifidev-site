@@ -2,7 +2,7 @@ import logo from "../assets/images/ahsharifi-logo.png";
 
 function Header() {
   return (
-    <header className="bg-dark-700/20 flex flex-row items-center justify-between px-4 py-2 rounded-md border border-dark-700/50">
+    <header className="bg-dark-700/20 flex flex-row items-center justify-between px-4 py-2 rounded-md border border-dark-700/20">
       <a href="#home">
         <img src={logo} alt="امیرحسین شریفی" width={65} />
       </a>
