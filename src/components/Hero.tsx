@@ -1,13 +1,6 @@
-import {
-  FaGithub,
-  FaInstagram,
-  FaLaravel,
-  FaReact,
-  FaTelegram,
-} from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaTelegram } from "react-icons/fa6";
 import myImage from "../assets/images/me.webp";
-import { Code2, Download, Send, Trophy } from "lucide-react";
-import { SiDjango } from "react-icons/si";
+import { Download, Send } from "lucide-react";
 
 function Hero() {
   return (
@@ -20,14 +13,17 @@ function Hero() {
       </div>
       <div className="container relative" style={{ zIndex: 10 }}>
         <div className="right w-1/2 flex flex-col">
-          <div className="flex flex-row items-center gap-2 mb-4">
-            <span className="w-8 h-px bg-gold-400/40 inline-block"></span>
-            <span className="text-gold-400/60">توسعه دهنده وب</span>
+          <div className="flex flex-row items-center gap-2">
+            <h2 className="text-4xl">سلام، من</h2>
+            <h1 className="text-4xl">امیرحسین شریفی</h1>
+            <h2 className="text-4xl">هستم</h2>
           </div>
-          <h2 className="text-5xl">سلام، من</h2>
-          <h1 className="text-6xl">امیرحسین شریفی</h1>
-          <h3 className="text-5xl opacity-60">هستم</h3>
-          <p className="my-6">
+          <div className="type">
+            <h3 className="text-xl mt-4 text-gold-300">
+              طراح و توسعه دهنده فول استک وب
+            </h3>
+          </div>
+          <p className="mb-6 mt-4">
             بیش از ۷ سال تجربه در ساخت محصولات دیجیتال با تمرکز بر عملکرد بالا،
             تجربه کاربری عالی و معماری تمیز. آماده چالش‌های جدید.
           </p>
@@ -64,37 +60,11 @@ function Hero() {
               src={myImage}
               alt="امیرحسین شریفی"
             />
-            <div
-              className="absolute -top-4 -right-4 card-dark rounded-md px-4 py-3 flex items-center gap-2"
-              style={{
-                animation: "float 5s ease-in-out infinite 1s",
-              }}
-            >
-              <Code2 className="lucide lucide-code-2 w-4 h-4 text-gold-400" />
-              <span className="text-xs text-neutral-300">۶+ سال تجربه</span>
-            </div>
-            <div
-              className="absolute -bottom-4 -left-4 card-dark rounded-md px-4 py-3 flex items-center gap-2"
-              style={{ animation: "float 5s ease-in-out infinite 2s" }}
-            >
-              <Trophy className="lucide lucide-trophy w-4 h-4 text-gold-400" />
-              <span className="text-xs text-neutral-300">۱۰+ پروژه</span>
-            </div>
-
-            <div className="absolute top-5 left-3 card-dark rounded-md px-4 py-4 flex items-center float-anim cursor-pointer">
-              <FaLaravel className="lucide lucide-trophy w-6 h-6 text-red-400" />
-            </div>
-            <div className="absolute top-20 left-3 card-dark rounded-md px-4 py-4 flex items-center float-anim cursor-pointer">
-              <SiDjango className="lucide lucide-trophy w-6 h-6 text-green-400" />
-            </div>
-            <div className="absolute top-35 left-3 card-dark rounded-md px-4 py-4 flex items-center float-anim cursor-pointer">
-              <FaReact className="lucide lucide-trophy w-6 h-6 text-sky-400" />
-            </div>
           </div>
         </div>
       </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span class="text-[10px] text-neutral-600 tracking-widest uppercase">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+        <span className="text-[10px] text-neutral-600 tracking-widest uppercase">
           اسکرول
         </span>
         <svg

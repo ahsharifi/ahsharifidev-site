@@ -5,7 +5,7 @@
 }
 
 .hero {
-  padding: 140px 0 40px;
+  padding: 160px 0 40px;
 }
 
 .hero .container {
@@ -21,11 +21,6 @@
   background-clip: text;
   color: transparent;
   line-height: 1.5;
-}
-
-.hero .right h3 {
-  font-family: var(--regular);
-  font-weight: 600;
 }
 
 .hero .right p {
