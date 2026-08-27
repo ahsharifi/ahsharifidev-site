@@ -6,10 +6,10 @@ function Hero() {
   return (
     <section className="hero min-h-screen overflow-hidden relative">
       <div className="z-1">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gold-400/[0.02] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-400/[0.02] rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 border border-gold-400/[0.04] rounded-full"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 border border-gold-400/[0.02] rounded-full"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gold-400/2 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-400/2 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 border border-gold-400/4 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 border border-gold-400/2 rounded-full"></div>
       </div>
       <div className="container relative" style={{ zIndex: 10 }}>
         <div className="right w-4/8 flex flex-col">
