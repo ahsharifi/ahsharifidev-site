@@ -7,10 +7,7 @@ interface ServiceProps {
 
 function Service({ icon, title, description, tags }: ServiceProps) {
   return (
-    <li
-      className="card-dark rounded-2xl p-8 group animate-in visible"
-      style={{ transitionDelay: "0.2s" }}
-    >
+    <li className="card-dark rounded-2xl p-8 group animate-in visible">
       <div className="w-12 h-12 rounded-md bg-gold-400/[0.06] border border-gold-400/10 flex items-center justify-center mb-6 group-hover:bg-gold-400/10 transition-colors text-gold-300">
         {icon}
       </div>
