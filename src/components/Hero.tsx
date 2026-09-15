@@ -29,7 +29,7 @@ function Hero() {
             <p className="bg-gold-500/10 px-6 py-1 rounded-xl">مدرن</p>
           </div>
           <p className="mb-5 mt-4">
-            بیش از ۷ سال تجربه در ساخت محصولات دیجیتال با تمرکز بر عملکرد بالا،
+            بیش از 6 سال تجربه در ساخت محصولات دیجیتال با تمرکز بر عملکرد بالا،
             تجربه کاربری عالی و معماری تمیز. آماده چالش‌های جدید.
           </p>
           <div className="buttons flex flex-row items-center justify-start gap-4">
