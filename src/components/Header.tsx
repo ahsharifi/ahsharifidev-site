@@ -14,7 +14,7 @@ function Header() {
           <a href="#services">خدمات</a>
         </li>
         <li>
-          <a href="#portfolio">نمونه کارها</a>
+          <a href="#projects">نمونه کارها</a>
         </li>
         <li>
           <a href="#skills">مهارت ها</a>
