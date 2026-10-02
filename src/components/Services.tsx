@@ -29,6 +29,12 @@ function Services() {
             tags={["Laravel", "Django", "Node.js"]}
           />
           <Service
+            icon={<BiConversation size={20} />}
+            title="مشاوره فنی"
+            description="مشاوره در انتخاب تکنولوژی، بررسی کد، بهبود عملکرد و معماری نرم‌افزار."
+            tags={["Code Review", "Architecture"]}
+          />
+          <Service
             icon={<CiMobile3 size={20} />}
             title="اپلیکیشن موبایل"
             description="توسعه اپلیکیشن‌های کراس‌پلتفرم با React Native و عملکرد بومی."
@@ -37,7 +43,7 @@ function Services() {
           <Service
             icon={<Cloud size={20} />}
             title="DevOps و استقرار"
-            description="راه‌اندازی CI/CD، Docker، مدیریت سرور و استقرار در سرویس‌های ابری."
+            description="راه‌اندازی  Docker، مدیریت سرور و استقرار در سرویس‌های ابری."
             tags={["Docker", "Linux"]}
           />
           <Service
@@ -47,15 +53,9 @@ function Services() {
             tags={["Mysql", "Postgresql", "Redis"]}
           />
           <Service
-            icon={<BiConversation size={20} />}
-            title="مشاوره فنی"
-            description="مشاوره در انتخاب تکنولوژی، بررسی کد، بهبود عملکرد و معماری نرم‌افزار."
-            tags={["Code Review", "Architecture"]}
-          />
-          <Service
             icon={<TbHttpGet size={20} />}
             title="طراحی API"
-            description="طراحی و پیاده‌سازی RESTful و GraphQL API های مقیاس‌پذیر"
+            description="طراحی و پیاده‌سازی RESTful و Fast API های مقیاس‌پذیر و پرسرعت."
             tags={["REST API", "Fast API"]}
           />
           <Service

@@ -4,7 +4,7 @@ import { Download, Send } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="hero min-h-screen overflow-hidden relative">
+    <section className="hero min-h-screen overflow-hidden relative" id="home">
       <div className="z-1">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gold-400/2 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-400/2 rounded-full blur-3xl"></div>
@@ -29,7 +29,7 @@ function Hero() {
             <p className="bg-gold-500/10 px-6 py-1 rounded-xl">مدرن</p>
           </div>
           <p className="mb-5 mt-4">
-            بیش از ۷ سال تجربه در ساخت محصولات دیجیتال با تمرکز بر عملکرد بالا،
+            بیش از 6 سال تجربه در ساخت محصولات دیجیتال با تمرکز بر عملکرد بالا،
             تجربه کاربری عالی و معماری تمیز. آماده چالش‌های جدید.
           </p>
           <div className="buttons flex flex-row items-center justify-start gap-4">
