@@ -4,7 +4,7 @@ import { Download, Send } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="hero min-h-screen overflow-hidden relative">
+    <section className="hero min-h-screen overflow-hidden relative" id="home">
       <div className="z-1">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gold-400/2 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-400/2 rounded-full blur-3xl"></div>

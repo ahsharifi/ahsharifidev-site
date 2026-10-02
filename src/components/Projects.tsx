@@ -10,7 +10,7 @@ function Projects() {
         <h2 className="mb-16 text-4xl">
           پروژه های <span className="text-gold-400">برتر</span> من
         </h2>
-        <ul className="w-full grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <ul className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <Project />
           <Project />
           <Project />

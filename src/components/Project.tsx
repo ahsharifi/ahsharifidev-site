@@ -14,7 +14,7 @@ function Project() {
         <p className="text-sm py-3">
           پلتفرم تجارت الکترونیک با درگاه پرداخت، مدیریت موجودی و سیستم ارسال.
         </p>
-        <ul className="flex flex-row gap-2 text-sm opacity-50">
+        <ul className="flex flex-row gap-2 text-[10px] opacity-50">
           <li>React</li>
           <li>Laravel</li>
         </ul>
