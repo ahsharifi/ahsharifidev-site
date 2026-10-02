@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
       <About />
       <Services />
       <Projects />
+      <Skills />
     </>
   );
 }
